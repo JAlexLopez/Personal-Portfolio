@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-wrapper {
+    width: 100%;
+    position: absolute;
+    margin-top: -45%;
+}
+
+.text-wrapper h1,
+h3 {
+    text-align: center;
+}
+
+.text-wrapper h1 span {
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 2%;
+    padding: 0;
+    text-align: center;
+    font-size: 8vh;
+}
+
+.text-wrapper h3 span {
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 3vh;
+}
+
+.link-about-me .link-portfolio {
+    margin: 20px;
+}
+
+.link-about-me,
+.link-portfolio {
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25%;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.content-wrapper .scroll-buttons {
+    width: 100%;
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 47%;
+}
+
+.about-me h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 5vh;
+    padding-bottom: 40px;
+}
+
+.about-me p {
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 5vh;
+}

@@ -2,41 +2,49 @@
 <html lang="en">
 
 <head>
+    <script src="./app.js"></script>
+    <script src="pageFunctions.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Lopez | Frontend Developer</title>
+
     <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content-wrapper">
-        <img src="./images/cover-image.jpg">
-        <div class="text-wrapper">
+    <header class="cover fadeIn">
+        <div class="title fadeIn">
             <h1><span>Alex Lopez</span></h1>
-            </br>
             <h3><span>Front End Web Developer</span></h3>
         </div>
-        <div class="scroll-buttons">
-            <button class="link-about-me">About Me</button>
-            <button class="link-portfolio">Portfolio</button>
+        <div class="scroll-btns fadeIn">
+            <a class="btn" href="#about-me">About Me</a>
+            <a class="btn" href="#projects">Projects</a>
         </div>
-    </div>
-    <div class="about-me">
-        <h1>About Me</h1>
+    </header>
+    <div id="about-me" class="section-title fadeIn">
+        <h1><span>About Me</span></h1>
         </br>
-        <p>I'm Alex, a passionate self-taught web developer. I got into coding in high school
+        <p><span>I'm Alex, a passionate self-taught web developer. I got into coding in high school
             </br>
             when I took a game design class where I made simple 2D games using Visual Basic. I've always
             </br>
             loved the feeling of creating with code and recently decided to turn my life around and learn
             </br>
             web development.
-        </p>
+        </span></p>
     </div>
-    <div class="portfolio">
-        <h1>Portfolio</h1>
-        <div class="projects">
-            <button>project</button>
+    <div id="projects" class="section-title fadeIn">
+        <h1><span>Projects</span></h1>
+        <div class="project-section">
+            <a href="https://bigmikesfitnessequipment.netlify.app/" target="_blank">
+                <ul class="project">
+                    <li>
+                        <img class="thumbnail" src="./images/fitness-equipment.PNG">
+                    </li>
+            </a>
+            </ul>
         </div>
     </div>
 </body>

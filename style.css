@@ -173,3 +173,43 @@ h3 {
     background-color: (0, 0, 0, 0.7);
     color: white;
 }
+
+.skills {
+    text-align: center;
+    color: white;
+    padding: 200px 100px 100px 100px;
+    font-size: 35px;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 400px;
+    list-style: none;
+}
+
+.vector {
+    height: 60px;
+}
+
+li .vector {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.skills h2 {
+    font-weight: 700;
+}
+
+.skills h2::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    border-bottom: 2px solid white;
+}
+
+.vector:hover {
+    transform: scale(1.3);
+}

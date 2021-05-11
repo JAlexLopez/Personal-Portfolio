@@ -61,7 +61,7 @@ div {
     text-decoration: none;
     color: white;
     line-height: 80px;
-    padding: 0 25px;
+    margin: 0 25px;
 }
 
 #hero {
@@ -226,6 +226,10 @@ section {
     color: rgb(0, 0, 0);
     font-weight: 600;
     flex-direction: column;
+}
+
+#nav-links a:hover {
+    color: rgb(25, 163, 255);
 }
 
 .justify-content-center {

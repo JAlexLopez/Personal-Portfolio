@@ -2,68 +2,160 @@
 <html lang="en">
 
 <head>
-    <script src="./app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway&display=swap');
+    </style>
+    <script src="./app.js">
+    </script>
     <script src="pageFunctions.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex Lopez | Frontend Developer</title>
 
     <link href="./style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="cover fadeIn">
-        <div class="title fadeIn">
-            <h1><span>Alex Lopez</span></h1>
-            <h3><span>Front End Web Developer</span></h3>
+    <section id="home">
+        <nav class="fade-in" id="nav-container">
+            <a href="javascript:void(0)" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+            <div id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <header id="hero">
+            <div class="hero-container">
+                <div class="hero-text fade-in">
+                    <h1>Hello,</br> I'm Alex Lopez</h1>
+                    <p><span class="highlight">Web Developer</span></p>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="about-me" class="page-section">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div>
+                    <img class="m-0 p-0 fade-in portrait-img" src="./images/portrait.jpg" />
+                </div>
+                <div class="w-50 p-50">
+                    <h2 class="section-heading">ABOUT ME</h2>
+                    <div class="p-about">
+                        <p>Hi! My name is Alex Lopez and I'm a Frontend Web Developer who is passionate about developing the web through clean, semantic, and scalable code. I'm intrigued by coding and excited to continue learning new technologies.
+                        </p>
+                        <p>I initially discovered programming in high school after watching The Social Network. The movie sparked a curiosity and I signed up for the game development class in my sophomore year. There, I learned to make 2D games such as Flappy
+                            Bird and Super Mario using Visual Basic, which I picked up very quickly and consider a very fun programming language. After that I took one semester of C++ which was a fair bit more challenging.
+                        </p>
+                        <p>After working a few odd jobs after high school and attending college part time, I discovered Web Development and fell in love immediately. I decided to start teaching myself HTML, CSS, and JavaScript while taking other courses.
+                            The next semester I enrolled in the Web Development Program at my college and there I added to my knowledge of the aforementioned languages and even took another C++ course.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="scroll-btns fadeIn">
-            <a class="btn" href="#about-me">About Me</a>
-            <a class="btn" href="#projects">Projects</a>
+    </section>
+    <section id="skills" class="page-section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading">TECH SKILLS</h2>
+            </div>
+            <div class="row text-center justify-content-center p-top-5">
+                <div class="col-md-4 col-6 col-lg-3">
+                    <div class="h-100 card d-flex justify-content-center border-0 align-items-center">
+                        <div class="card-body">
+                            <img src="./images/html.png" alt="HTML logo" class="skill-icon" />
+                        </div>
+                        <div class="card-text">
+                            <h4 class="text-light">HTML</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 col-lg-3">
+                    <div class="h-100 card d-flex justify-content-center border-0 align-items-center">
+                        <div class="card-body">
+                            <img src="./images/css.png" alt="CSS logo" class="skill-icon" />
+                        </div>
+                        <div class="card-text">
+                            <h4 class="text-light">CSS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 col-lg-3">
+                    <div class="h-100 card d-flex justify-content-center border-0 align-items-center">
+                        <div class="card-body">
+                            <img src="./images/javascript.png" alt="Javascript logo" class="skill-icon" />
+                        </div>
+                        <div class="card-text">
+                            <h4 class="text-light">Javascript</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 col-lg-3">
+                    <div class="h-100 card d-flex justify-content-center border-0 align-items-center">
+                        <div class="card-body">
+                            <img src="./images/git.png" alt="git logo" class="skill-icon" />
+                        </div>
+                        <div class="card-text">
+                            <h4 class="text-light">Git</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 col-lg-3">
+                    <div class="h-100 card d-flex justify-content-center border-0 align-items-center">
+                        <div class="card-body">
+                            <img src="./images/photoshop.png" alt="Photoshop logo" class="skill-icon" />
+                        </div>
+                        <div class="card-text">
+                            <h4 class="text-light">Photoshop</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <div id="about-me" class="section-title fadeIn">
-        <h1><span>About Me</span></h1>
-        <p>I'm Alex, a passionate self-taught web developer. I got into coding in high school when I took a game design class where I made simple 2D games using Visual Basic. I've always loved the feeling of creating with code and in early 2020 I decided
-            to make a career change into web development.</p>
-        <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><img class="vector" src="./images/html-5.svg"></li>
-                <li><img class="vector" src="./images/css.png"></li>
-                <li><img class="vector" src="./images/git.png"></li>
-                <li><img class="vector" src="./images/javascript.svg"></li>
-                <li><img class="vector" src="./images/photoshop.png"></li>
-            </ul>
-        </div>
+    </section>
 
-    </div>
-    <div id="projects" class="section-title fadeIn">
-        <h1><span>Projects</span></h1>
-        <div>
-            <ul class="project-section">
-                <li class="thumbnail">
-                    <a href="https://angry-banach-96ffc0.netlify.app/" target="_blank">
-                        <img src="./images/barber-shop.PNG">
-                    </a>
-                </li>
-                <li class="thumbnail">
-                    <a href="https://bigmikesfitnessequipment.netlify.app/" target="_blank">
-                        <img src="./images/fitness-equipment.PNG">
-                    </a>
-                </li>
-
-                <li class="thumbnail">
-                    <a href="https://inspiring-babbage-50a71a.netlify.app/" target="_blank">
-                        <img src="./images/html-email.PNG">
-                    </a>
-                </li>
-
-            </ul>
+    <section id="projects" class="page-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading">PROJECTS</h2>
+            </div>
+            <div class="h-100 card d-flex justify-content-center border-0 align-items-center">
+                <div class="card-body">
+                    <img src="./images/ev-compare.PNG" alt="EV Compare thumbnail" class="project-thumbnail" />
+                </div>
+                <div class="card-text">
+                    <h4 class="text-light">EV Compare</h4>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <section id="contact" class="page-section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading">CONTACT</h2>
+            </div>
+            <div class="row text-center justify-content-center">
+                <div class="contact-spacing contact-h">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="text-light">Riverside, CA</span>
+                </div>
+                <div class="contact-spacing contact-h">
+                    <i class="fas fa-phone"></i>
+                    <span class="text-light">(951)224-3152</span>
+                </div>
+                <div class="contact-spacing contact-h">
+                    <i class="fas fa-envelope"></i>
+                    <span class="text-light">jalexlopez15@gmail.com</span>
+                </div>
+            </div>
+    </section>
 </body>
-
 
 </html>

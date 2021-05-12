@@ -240,6 +240,10 @@ section {
     display: flex !important;
 }
 
+.flex-row {
+    flex-direction: row !important;
+}
+
 border-0 {
     border: 0 !important;
 }
